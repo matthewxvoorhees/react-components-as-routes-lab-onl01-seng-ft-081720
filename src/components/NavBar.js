@@ -3,21 +3,21 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <div>
+    <div className="navbar">
       <NavLink
           to="/"
           exact
           activeStyle={{
             background: 'pink'
           }}
-        >Home   -</NavLink>
+        >Home</NavLink>
         <NavLink
           to="/movies"
           exact
           activeStyle={{
             background: 'pink'
           }}
-        > Movies   -</NavLink>
+        >Movies</NavLink>
         <NavLink
           to="/directors"
           exact
@@ -25,7 +25,7 @@ const NavBar = () => {
           activeStyle={{
             background: 'pink'
           }}
-        >Directors   -</NavLink>
+        >Directors</NavLink>
         <NavLink
           to="/actors"
           exact
@@ -33,7 +33,7 @@ const NavBar = () => {
           activeStyle={{
             background: 'pink'
           }}
-        > Actors   </NavLink>
+        >Actors</NavLink>
     </div>
   );
 };
